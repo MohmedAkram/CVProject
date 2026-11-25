@@ -1,0 +1,3 @@
+detector,mean_keypoints,mean_grid_coverage,mean_repeatability,pairs_used
+harris,713.1,0.585,0.412,17
+sift,869.4,0.739,0.315,17
