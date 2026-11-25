@@ -1,0 +1,40 @@
+Landmark recognition by SIFT matching + KNN voting (Karim El Henawy)
+
+Test accuracy: 0.833 (25/30 test photos correct)
+Macro F1:      0.836
+1-NN accuracy (best single match only, for reference): 0.867
+
+Per landmark:
+ landmark  precision   recall     F1  test photos
+        1      1.000    0.400  0.571            5
+        2      1.000    0.800  0.889            5
+        3      1.000    1.000  1.000            5
+        4      1.000    1.000  1.000            5
+        5      0.500    1.000  0.667            5
+        6      1.000    0.800  0.889            5
+
+Settings:
+  k = 5, voting rule = weighted (chosen by 5-fold cross-validation on training photos only, CV accuracy 0.934)
+  ties: larger total num_good among the top k, then highest-ranked neighbour
+  match score = num_good (SIFT, ratio test 0.75, RANSAC inliers), shared/matcher.py
+
+Split:
+  test = photos _1 to _5 of each landmark (30 photos)
+  gallery = all other photos, _6 and up incl. _21 (91 photos)
+  metric = accuracy = correct test predictions / all test predictions
+
+Unknown-place detection (optional bonus)
+Confidence: num_good of the best-matching training photo
+Threshold: score < 52 -> 'unknown place' (chosen on training folds only)
+
+Training folds (used to choose the threshold):
+  known photos accepted:   0.846 (91 photos)
+  unknown photos rejected: 0.868 (91 simulated)
+  balanced accuracy:       0.857
+
+Test photos (threshold fixed beforehand):
+  known photos accepted:   0.633 (19/30)
+  unknown photos rejected: 0.933 (28/30)
+  balanced accuracy:       0.783
+
+Unknown places are simulated by removing the photo's own landmark from the gallery.

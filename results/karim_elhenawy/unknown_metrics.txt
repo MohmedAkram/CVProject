@@ -1,0 +1,15 @@
+Unknown-place detection (optional bonus)
+Confidence: num_good of the best-matching training photo
+Threshold: score < 52 -> 'unknown place' (chosen on training folds only)
+
+Training folds (used to choose the threshold):
+  known photos accepted:   0.846 (91 photos)
+  unknown photos rejected: 0.868 (91 simulated)
+  balanced accuracy:       0.857
+
+Test photos (threshold fixed beforehand):
+  known photos accepted:   0.633 (19/30)
+  unknown photos rejected: 0.933 (28/30)
+  balanced accuracy:       0.783
+
+Unknown places are simulated by removing the photo's own landmark from the gallery.

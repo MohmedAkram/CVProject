@@ -1,0 +1,8 @@
+{
+  "k": 5,
+  "rule": "weighted",
+  "cv_accuracy": 0.9341,
+  "n_folds": 5,
+  "tie_rule": "larger total num_good among the top k, then highest-ranked neighbour",
+  "unknown_threshold": 52
+}

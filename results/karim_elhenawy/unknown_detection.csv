@@ -1,0 +1,31 @@
+test_image,true_landmark,best_score_full_gallery,decision_full_gallery (should be known),best_score_own_landmark_hidden,decision_own_landmark_hidden (should be unknown place)
+1_1.jpeg,1,27,unknown place,27,unknown place
+1_2.jpeg,1,37,unknown place,37,unknown place
+1_3.jpeg,1,26,unknown place,26,unknown place
+1_4.jpeg,1,87,known,19,unknown place
+1_5.jpeg,1,57,known,22,unknown place
+2_1.jpeg,2,27,unknown place,17,unknown place
+2_2.jpeg,2,25,unknown place,17,unknown place
+2_3.jpeg,2,26,unknown place,19,unknown place
+2_4.jpeg,2,144,known,26,unknown place
+2_5.jpeg,2,178,known,32,unknown place
+3_1.jpeg,3,52,known,12,unknown place
+3_2.jpeg,3,102,known,15,unknown place
+3_3.jpeg,3,98,known,12,unknown place
+3_4.jpeg,3,111,known,22,unknown place
+3_5.jpeg,3,148,known,23,unknown place
+4_1.jpeg,4,62,known,27,unknown place
+4_2.jpeg,4,205,known,28,unknown place
+4_3.jpeg,4,110,known,31,unknown place
+4_4.jpeg,4,126,known,33,unknown place
+4_5.jpeg,4,347,known,59,known
+5_1.jpeg,5,8,unknown place,8,unknown place
+5_2.jpeg,5,8,unknown place,6,unknown place
+5_3.jpeg,5,12,unknown place,6,unknown place
+5_4.jpeg,5,43,unknown place,7,unknown place
+5_5.jpeg,5,42,unknown place,5,unknown place
+6_1.jpeg,6,126,known,41,unknown place
+6_2.jpeg,6,78,known,31,unknown place
+6_3.jpeg,6,57,known,57,known
+6_4.jpeg,6,294,known,26,unknown place
+6_5.jpeg,6,105,known,32,unknown place
